@@ -164,11 +164,17 @@ body {
 /*Slider*/
 
 .intro__slider {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__inner {
     display: flex;
     justify-content: space-between;
-    margin-top: 160px;
     
-
 }
 
 .slider__item {
