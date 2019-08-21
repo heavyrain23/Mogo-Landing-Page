@@ -235,7 +235,8 @@ hr {
 .section--devices {
     background: url(../img/images/phone_background_13.jpg) center no-repeat;
     background-size: cover; 
-    padding-bottom: 0;                                                  
+    padding-bottom: 0;    
+    margin-bottom: 40px;                                              
 }
 
 .section__header {
@@ -425,6 +426,90 @@ hr {
     z-index: 1;
 }
 
+/*Wedo*/
+
+.wedo {
+    display: flex;
+}
+
+.wedo__item {
+    width: 50%;
+}
+
+/*Accordion*/
+
+.accordion__item.active
+.accordion__content {
+    display: block;
+}
+
+.accordion__item.active
+.accordion__header:after {
+    transform: translateY(-50%)
+    rotate(-45deg);
+    margin-top: 5px;
+}
+
+.accordion__item.active 
+.accordion__header {
+    border-bottom-color: #e5e5e5;
+}
 
 
-  
+.accordion__item {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.accordion__header {
+    position: relative;
+
+    border-bottom: 1px solid transparent;
+    padding: 15px 20px 15px 65px;
+    cursor: pointer;
+}
+
+.accordion__header:after {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #cfcfcf;
+    border-right: 2px solid #cfcfcf;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%)
+    rotate(135deg);
+    
+}
+
+
+.accordion__icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.accordion__content {
+    display: none;
+    padding: 15px 20px;
+
+    font-size: 15px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.accordion__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+}
+
+
