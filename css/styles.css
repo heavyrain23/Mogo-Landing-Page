@@ -236,6 +236,7 @@ hr {
 
 .section--devices {
     background: url(../img/images/phone_background_13.jpg) center no-repeat;
+    -webkit-background-size: cover;
     background-size: cover; 
     padding-bottom: 0;    
     margin-bottom: 40px;                                              
@@ -426,9 +427,13 @@ hr {
 .services__item {
     position: relative;
     width: 33.33333%;
-    padding-left: 85px;
-    padding-right: 20px;
+    padding: 0 35px 40px 85px;
+    margin-bottom: 40px;
     
+}
+
+.services__item--border {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -452,6 +457,8 @@ hr {
 
 }
 
+/*Devices*/
+
 .devices {
     position: relative;
     width: 100%;
@@ -461,6 +468,9 @@ hr {
 
 .devices__item {
     display: block;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .devices__item--phone {
@@ -474,10 +484,20 @@ hr {
 
 .wedo {
     display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
 }
 
 .wedo__item {
     width: 50%;
+    padding: 0 15px;
+    
+}
+
+.wedo__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Accordion*/
@@ -1177,6 +1197,15 @@ hr {
         border-right: 0;
     }
 
+    .services__item {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .services__item--border {
+        border-bottom: 0;
+    }
+
 }
 
 @media (max-width: 770px) {
@@ -1215,6 +1244,33 @@ hr {
 
     .slider_item.active:before {
         width: 50%;
+    }
+
+    /*Services*/
+
+    .services {
+        justify-content: center;
+    }
+
+    .services__item {
+        width: 100%;
+        padding-left: 55px;
+        padding-right: 0;
+        padding-left: 55px;
+    }
+
+    .services__icon {
+        left: 0;
+    }
+
+    /*Wedo*/
+
+    .wedo__img {
+        display: none;
+    }
+
+    .wedo__item {
+        width: 100%;
     }
 }
 
@@ -1256,6 +1312,24 @@ hr {
     .stat__item:last-child {
         border-bottom: 0;
     }
+
+    .stat__count {
+        font-size: 52px;
+    }
+
+    /*Devices*/
+
+    .devices {
+         max-width: 320px;
 }
+
+    .devices__item--phone {
+        width: 180px;
+        bottom: -50px;
+        right: -80p;
+    }
+
+}
+
 
 
