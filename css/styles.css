@@ -102,6 +102,20 @@ hr {
     z-index: 1000;
 }
 
+.header.fixed {
+    
+    padding: 10px 0;
+    background-color: #eb8b8d;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    transform: translate3d(0, 0, 0);
+}
+
 .header__logo {
     font-weight: 700;
     color: #fff;
@@ -114,18 +128,6 @@ hr {
     align-items: center;
 }
 
-.header.fixed {
-
-    background-color: #eb8b8d;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-
-    transform: translate3d(0, 0, 0);
-}
 
 .header.active {
     background-color: #eb8b8d;
@@ -1426,6 +1428,11 @@ hr {
         padding: 40px 0;
     }    
 
+    .section--devices {
+        padding-bottom: 0;
+    }
+
+
     /*Cards*/
     .cards {
         margin-top:50px;
@@ -1538,7 +1545,7 @@ hr {
 
     /*Intro*/
 
-    .intro__siptitle {
+    .intro__suptitle {
         font-size: 22px;
     }
 
