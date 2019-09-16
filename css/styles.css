@@ -197,6 +197,11 @@ hr {
     z-index: 1;
 }
 
+.nav-toggle:focus {
+    outline: 0;
+}
+
+
 .nav-toggle__item {
     display: block;
     width: 100%;
@@ -1411,6 +1416,10 @@ hr {
        left: 0;
 
        background-color: #eb8b8d;
+    }
+
+    .nav.active {
+        display: block;
     }
 
     .nav-toggle {
